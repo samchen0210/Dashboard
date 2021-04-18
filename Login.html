@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/CSS/Logostyle.css">
+    <script type="text/javascript" src="ReadMySQL.php"></script>
+
+    <title>Login page</title>
+</head>
+
+<body>
+    <section class="content-box">
+        <div class="content-word">
+            <h1><i>Please enter your server data</i></h1>
+            <form method="POST" action="/PHP/check_POST.php">
+                <label for="DatabasenameInput">Database name</label>
+                <input type="text" name="databasename" id="DatabasenameInput"><br><br>
+                <label for="PasswordInput">Password</label>
+                <input type="password" name="password" id="PasswordInput"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
