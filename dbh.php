@@ -1,7 +1,7 @@
 <?php
 // Database Figure
-$severname = "%.%.%.%";
-$username = "sc0210";
+$severname = "123.194.176.209";
+$username = "root";
 $password = "0936556436Sam";
 $dbname = "database";
 $port = "3306";
