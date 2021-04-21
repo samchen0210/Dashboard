@@ -3,6 +3,8 @@
 
 <head>
     <title>AJAX Fetch data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
 
     <script type="text/javascript">
         window.onload = function() {
@@ -41,7 +43,7 @@
 
 
             function updateChart() {
-                $.getJSON("data.php", function(data) {
+                $.getJSON("https://api.thingspeak.com/channels/1364555/status.json?api_key=AZPUHUPVWO42ZMGT", function(data) {
                     $.each(data, function(key, value) {
                         dataPoints.push({
                             x: parseInt(value["entry_id"]),
